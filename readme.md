@@ -18,6 +18,8 @@ where:
 
 > You can call /fit-in/WIDTHx0 (zero) to have the image with the specified width and same aspect ratio of the original
 
+> If you wish to apply a "contain" rule you can call "crop-in" instead of "fit-in"
+
 ### Using base64
 
 Or else you can encode a json object in base 64
