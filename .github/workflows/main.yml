@@ -17,6 +17,6 @@ jobs:
       - name: Cloud Storage Uploader
         uses: google-github-actions/upload-cloud-storage@v0.10.2
         with:
-          path: '/'
-          destination: 'static.resizely.io/docs'
+          path: /
+          destination: static.resizely.io/docs
           glob: '**/*.md'
