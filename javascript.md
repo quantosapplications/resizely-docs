@@ -1,10 +1,11 @@
 **Resizely - Vanilla Javascript example**
+
 ```
 <!DOCTYPE html>
 <html>
 <body>
 
-    <img src="https://storage.googleapis.com/static.resizely.io/sample/sample_1.jpg" onload="this.onload=null; this.src=getResizelyImage('https://storage.googleapis.com/static.resizely.io/sample/sample_1.jpg');" />
+    <img src="https://storage.googleapis.com/static.resizely.net/sample/sample_1.jpg" onload="this.onload=null; this.src=getResizelyImage('https://storage.googleapis.com/static.resizely.net/sample/sample_1.jpg');" />
 
 <script>
     const RESIZELY_API_KEY = 'your resizely api key';
@@ -21,7 +22,7 @@
             }
         };
         const requestBodyEncoded = btoa(JSON.stringify(requestyBody));
-        return `https://api.resizely.io/${requestBodyEncoded}`;
+        return `https://api.resizely.net/${requestBodyEncoded}`;
     }
 </script>
 

@@ -1,4 +1,5 @@
 **Resizely - Flutter example**
+
 ```
 import  'dart:convert';
 import  'package:flutter/material.dart';
@@ -7,7 +8,7 @@ const  RESIZELY_KEY = 'your resizely api key';
 
 /// Helper class to create a Resizely url
 class  ResizelyImageUrl {
-	
+
 	final  String apikey;
 	final  String url;
 	final  int? width;
@@ -30,7 +31,7 @@ class  ResizelyImageUrl {
 
 	String  _toBase64() => base64.encode(utf8.encode( jsonEncode(_toJson()) ));
 
-	String  toUrl() => 'https://api.resizely.io/${_toBase64()}';
+	String  toUrl() => 'https://api.resizely.net/${_toBase64()}';
 }
 
 /// Widget that display the image

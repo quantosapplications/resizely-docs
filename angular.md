@@ -1,4 +1,5 @@
 **Resizely - Angular example**
+
 ```
 import { Component, Input, OnInit } from '@angular/core';
 
@@ -35,7 +36,7 @@ export class ResizelyImageComponent implements OnInit {
       }
     };
     const resizelyEncodedBody = btoa(JSON.stringify(resizelyBody));
-    this.resizelyUrl = `https://api.resizely.io/${resizelyEncodedBody}`;
+    this.resizelyUrl = `https://api.resizely.net/${resizelyEncodedBody}`;
   }
 
 }

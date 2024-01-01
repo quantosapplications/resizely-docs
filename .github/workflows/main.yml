@@ -1,11 +1,9 @@
-
 name: Upload to GCS
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
 jobs:
-
   upload:
     runs-on: ubuntu-latest
     steps:
@@ -18,5 +16,5 @@ jobs:
         uses: google-github-actions/upload-cloud-storage@v0.10.2
         with:
           path: './'
-          destination: 'static.resizely.io/docs'
+          destination: 'static.resizely.net/docs'
           glob: '**/*.md'
